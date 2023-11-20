@@ -1,0 +1,176 @@
+body{
+    background-color: #26111F;
+}
+p{
+    font-size: 20px;
+    font-family: "Times New Roman";
+    color: #D9D8D7;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #D9D7C5;
+}
+li {
+    float: right;
+}
+li a {
+    display: inline-block;
+    color: midnightblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Blanket Medium";
+}
+li a:hover {
+    background-color: #FFFFFF;
+}
+.item {
+    flex:1;
+    text-align: center;
+    margin: 5px;
+}
+img {
+    width: 400px;
+}
+* {
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 600px;
+    background-color: #26111F;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+button {
+    font-family: "Blanket Medium";
+    font-size: 30px;
+    color: midnightblue;
+    background-color: #D9D7C5;
+    border-color: white;
+    height: 50px;
+    width: 125px;
+}
+.text-overlay {
+    position: absolute;
+    text-align: right;
+    top: 80px;
+    right: 20px;
+    font-size: 50px;
+    padding: 100px;
+    color: white;
+    max-width: 700px;
+    font-family: "Blanket Medium";
+}
+div b {
+    font-size: 70px;
+    color: midnightblue;
+    text-align: center;
+}
+footer p {
+    background-color: #D9D7C5;
+    color: midnightblue;
+    padding: 15px;
+    text-align: center;
+}
+.item img {
+    transition: transform 0.5s;
+}
+.item img:hover {
+    transform: rotateY(180deg);
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.logo img {
+    width: 67px; /* Adjust the size as needed */
+    margin-right: 10px; /* Add margin for spacing */
+}
+.logo {
+    margin-right: auto; /* Pushes the logo to the left */
+}
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #D9D7C5;
+    padding: 5px; /* Adjust padding as needed */
+    justify-content: flex-end; /* Align items to the right */
+}
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.image13{
+    display: none;
+}
+@media only screen and (max-width: 700px) {
+    nav a{
+        display: none;
+    }
+    .video-container video{
+        display: none;
+    }
+    .image13{
+        display: block;
+        width: 100%;
+        height: 50%;
+        margin-bottom: 20px;
+    }
+    .text-overlay {
+        position: absolute;
+        text-align: right;
+        font-size: 27px;
+        top: 110px;
+        padding: 20px;
+        padding-left: 150px;
+        color: white;
+        font-family: "Blanket Medium";
+    }
+    div b {
+        font-size: 25px;
+        color: midnightblue;
+        text-align: center;
+    }
+    button {
+        font-family: "Blanket Medium";
+        font-size: 20px;
+        color: midnightblue;
+        background-color: #D9D7C5;
+        border-color: white;
+        height: 27px;
+        width: 90px;
+    }
+    .column{
+        float: none;
+        width: 100%;
+        height: auto;
+        background-color: #26111F;
+    }
+    .item img {
+        transition: transform 0.5s;
+        width: 100%;
+    }
+}
